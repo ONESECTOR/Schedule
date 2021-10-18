@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_day_detail.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_list.xml" value="0.2375" />
       </map>
     </option>
   </component>
