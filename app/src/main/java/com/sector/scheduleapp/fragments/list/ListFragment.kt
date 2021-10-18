@@ -1,4 +1,4 @@
-package com.sector.scheduleapp.fragments
+package com.sector.scheduleapp.fragments.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
