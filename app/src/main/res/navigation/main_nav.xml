@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.sector.scheduleapp.fragments.ListFragment"
-        android:label="fragment_list"
+        android:label="FragmentList"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_dayDetailFragment"
@@ -17,6 +17,6 @@
     <fragment
         android:id="@+id/dayDetailFragment"
         android:name="com.sector.scheduleapp.fragments.DayDetailFragment"
-        android:label="fragment_day_detail"
+        android:label="FragmentDayDetail"
         tools:layout="@layout/fragment_day_detail" />
 </navigation>
