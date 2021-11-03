@@ -1,3 +1,72 @@
 <resources>
+    <!-- Basic -->
     <string name="app_name" translatable="false">Schedule App</string>
+
+    <!-- Week fragment -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="this_week">This week</string>
+    <string name="numerator">Numerator</string>
+    <string name="denominator">Denominator</string>
+
+    <string-array name="type_of_week">
+        <item>@string/numerator</item>
+        <item>@string/denominator</item>
+    </string-array>
+
+    <!-- Onboarding screens -->
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="finish">Finish</string>
+
+    <string-array name="spinner_course">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+        <item>Magistracy</item>
+    </string-array>
+
+    <string-array name="spinner_first_course">
+        <item>МОСб-211</item>
+        <item>МОСб-212</item>
+    </string-array>
+
+    <string-array name="spinner_second_course">
+        <item>МОСб-201</item>
+        <item>МОСб-202</item>
+    </string-array>
+
+    <string-array name="spinner_third_course">
+        <item>МОСб-191</item>
+        <item>МОСб-192</item>
+    </string-array>
+
+    <string-array name="spinner_fourth_course">
+        <item>МОСб-181</item>
+        <item>МОСб-182</item>
+    </string-array>
+
+    <string-array name="spinner_magistracy_course">
+        <item>МОСб-171</item>
+        <item>МОСб-172</item>
+    </string-array>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>

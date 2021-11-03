@@ -1,4 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Week fragment -->
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="this_week">Текущая неделя</string>
+    <string name="numerator">Числитель</string>
+    <string name="denominator">Знаменатель</string>
+    <string name="next">Далее</string>
+    <string name="skip">Пропустить</string>
+    <string name="finish">Завершить</string>
 
+    <string-array name="spinner_course">
+        <item>Первый</item>
+        <item>Второй</item>
+        <item>Третий</item>
+        <item>Четвертый</item>
+        <item>Магистратура</item>
+    </string-array>
+
+    <string-array name="spinner_first_course">
+        <item>МОСб-211</item>
+        <item>МОСб-212</item>
+    </string-array>
+
+    <string-array name="spinner_second_course">
+        <item>МОСб-201</item>
+        <item>МОСб-202</item>
+    </string-array>
+
+    <string-array name="spinner_third_course">
+        <item>МОСб-191</item>
+        <item>МОСб-192</item>
+    </string-array>
+
+    <string-array name="spinner_fourth_course">
+        <item>МОСб-181</item>
+        <item>МОСб-182</item>
+    </string-array>
+
+    <string-array name="spinner_magistracy_course">
+        <item>МОСб-171</item>
+        <item>МОСб-172</item>
+    </string-array>
 </resources>

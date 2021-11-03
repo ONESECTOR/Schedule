@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraint_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milk_white"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    tools:context=".fragments.week.WeekFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_your_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/golos_semi_bold"
+        android:text="@string/this_week"
+        android:textColor="@color/elegant_black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_current_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/golos_medium"
+        android:text="October 24th, 2021"
+        android:textColor="@color/golden"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_schedule" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/sp_type_of_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/golos_medium"
+        android:entries="@array/type_of_week"
+        android:textColor="@color/elegant_black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_current_date" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_type_of_week"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:listitem="@layout/item_day" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
