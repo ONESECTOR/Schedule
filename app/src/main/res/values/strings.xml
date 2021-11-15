@@ -28,7 +28,6 @@
         <item>Second</item>
         <item>Third</item>
         <item>Fourth</item>
-        <item>Magistracy</item>
     </string-array>
 
     <string-array name="spinner_first_course">
@@ -50,11 +49,6 @@
         <item>МОСб-181</item>
         <item>МОСб-182</item>
     </string-array>
-
-    <string-array name="spinner_magistracy_course">
-        <item>МОСб-171</item>
-        <item>МОСб-172</item>
-    </string-array>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -69,4 +63,6 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

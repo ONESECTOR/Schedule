@@ -3,18 +3,20 @@ package com.sector.scheduleapp.fragments.week
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.ItemDayBinding
-import com.sector.scheduleapp.objects.Day
+import com.sector.scheduleapp.objects.Week
 
-class WeekAdapter(var days: List<Day>): RecyclerView.Adapter<WeekAdapter.ViewHolder>() {
+class WeekAdapter(var daysOfWeek: List<Week>): RecyclerView.Adapter<WeekAdapter.ViewHolder>() {
 
     inner class ViewHolder(item: View): RecyclerView.ViewHolder(item) {
         val binding = ItemDayBinding.bind(item)
 
-        fun bind(day: Day) = with(binding) {
-            tvDay.text = day.title
+        fun bind(week: Week) = with(binding) {
+            tvDay.text = week.day
+
         }
     }
 
@@ -24,10 +26,14 @@ class WeekAdapter(var days: List<Day>): RecyclerView.Adapter<WeekAdapter.ViewHol
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(days[position])
+        holder.bind(daysOfWeek[position])
+
+        holder.itemView.setOnClickListener {
+            holder.itemView.findNavController().navigate(R.id.action_weekFragment_to_dayDetailFragment)
+        }
     }
 
     override fun getItemCount(): Int {
-        return days.size
+        return daysOfWeek.size
     }
 }

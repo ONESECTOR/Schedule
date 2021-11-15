@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraint_layout"
     android:layout_width="match_parent"
+    android:background="@color/white_smoke"
     android:layout_height="match_parent"
-    tools:context=".fragments.detail.DayDetailFragment">
+    tools:context=".fragments.settings.SettingsFragment">
 
     <RelativeLayout
         android:id="@+id/rl_bar"
@@ -31,19 +31,10 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/golos_semi_bold"
-            android:text="Вторник, 15 ноября"
+            android:text="Settings"
             android:textColor="@color/test_blue"
             android:textSize="21sp" />
 
     </RelativeLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rl_bar"
-        tools:listitem="@layout/item_subject_detail" />
 </androidx.constraintlayout.widget.ConstraintLayout>

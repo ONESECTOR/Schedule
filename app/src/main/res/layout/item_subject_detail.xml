@@ -2,18 +2,16 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:elevation="5dp"
-    app:cardCornerRadius="16dp">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/pure_white"
-        android:paddingStart="16dp"
-        android:paddingTop="16dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="16dp">
+        android:padding="16dp">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_subject"
@@ -23,6 +21,8 @@
             android:text="Информатика и программирование"
             android:textColor="@color/elegant_black"
             android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,7 +37,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_info"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:fontFamily="@font/golos_regular"
@@ -45,6 +45,8 @@
             android:textColor="@color/elegant_black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toEndOf="@+id/iv_description"
             app:layout_constraintTop_toTopOf="@+id/iv_description" />
 
@@ -67,8 +69,34 @@
             android:textColor="@color/elegant_black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toEndOf="@+id/iv_time"
             app:layout_constraintTop_toTopOf="@+id/iv_time" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_aud"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_aud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/golos_regular"
+            android:text="4.29Г"
+            android:textColor="@color/elegant_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_aud"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/iv_aud"
+            app:layout_constraintTop_toTopOf="@+id/iv_aud" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

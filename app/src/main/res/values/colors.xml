@@ -16,4 +16,6 @@
     <color name="light_gray">#B4B9CD</color>
     <color name="pure_white">#F0F0F0</color>
     <color name="milk_white">#ECECEC</color>
+    <color name="white_smoke">#EFF0F2</color>
+    <color name="test_blue">#293039</color>
 </resources>

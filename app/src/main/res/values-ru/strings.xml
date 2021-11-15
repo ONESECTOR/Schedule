@@ -19,7 +19,6 @@
         <item>Второй</item>
         <item>Третий</item>
         <item>Четвертый</item>
-        <item>Магистратура</item>
     </string-array>
 
     <string-array name="spinner_first_course">
@@ -40,10 +39,5 @@
     <string-array name="spinner_fourth_course">
         <item>МОСб-181</item>
         <item>МОСб-182</item>
-    </string-array>
-
-    <string-array name="spinner_magistracy_course">
-        <item>МОСб-171</item>
-        <item>МОСб-172</item>
     </string-array>
 </resources>

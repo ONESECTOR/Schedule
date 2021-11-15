@@ -3,88 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
-    android:layout_width="match_parent"
+    android:layout_width="200dp"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
-    android:elevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="3dp"
     app:cardCornerRadius="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="@color/pure_white"
-        android:paddingStart="16dp"
-        android:paddingTop="16dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="16dp">
+        android:padding="16dp">
 
         <RelativeLayout
             android:id="@+id/relative_layout_day_info"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_icon_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chemistry" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_day"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                android:layout_below="@+id/iv_icon_day"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/golos_medium"
                 android:text="Понедельник"
-                android:textColor="@color/midnight_blue"
-                android:textSize="30sp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/tv_day_number"
-                    android:layout_width="40dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/round_button"
-                    android:fontFamily="@font/golos_medium"
-                    android:text="27"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tv_month"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/golos_medium"
-                    android:text="Окт"
-                    android:textColor="@color/elegant_black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="@id/tv_day_number"
-                    app:layout_constraintStart_toStartOf="@id/tv_day_number"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_day_number" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                android:textColor="#f9b16e"
+                android:textSize="20sp" />
 
         </RelativeLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_button"
-            android:fontFamily="@font/golos_regular"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:text="Подробнее"
-            android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/relative_layout_day_info" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
