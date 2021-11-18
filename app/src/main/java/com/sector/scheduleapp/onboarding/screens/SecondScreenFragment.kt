@@ -16,6 +16,9 @@ class SecondScreenFragment : Fragment() {
     private var _binding: FragmentSecondScreenBinding? = null
     private val binding get() = _binding!!
 
+    private var courseText: String? = null
+    private var grouptext: String? = null
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,17 +33,105 @@ class SecondScreenFragment : Fragment() {
 
         val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
 
-        binding.btnNext.setOnClickListener {
-            viewPager?.currentItem = 2
+        setDefaultSettings()
+
+        binding.apply {
+            btnNext.setOnClickListener {
+                viewPager?.currentItem = 2
+            }
+
+            spinnerCourse.setOnItemClickListener { parent, _, position, _ ->
+                val selected = parent.getItemAtPosition(position).toString()
+
+                selectCourse(selected)
+            }
+
+            spinnerGroups.setOnItemClickListener { parent, _, position, _ ->
+                val selected = parent.getItemAtPosition(position).toString()
+
+                saveSettings(selected)
+            }
         }
+
+
+    }
+
+    private fun selectCourse(course: String){
+        binding.tilGroups.visibility = View.VISIBLE
+
+        courseText = course
+
+        when(courseText) {
+            "Первый" -> {
+                binding.spinnerGroups.setAdapter(
+                    ArrayAdapter(
+                        requireContext(),
+                        R.layout.dropdown_item,
+                        resources.getStringArray(R.array.spinner_first_course)
+                    )
+                )
+            }
+            "Второй" -> binding.spinnerGroups.setAdapter(
+                ArrayAdapter(
+                    requireContext(),
+                    R.layout.dropdown_item,
+                    resources.getStringArray(R.array.spinner_second_course)
+                )
+            )
+            "Третий" -> binding.spinnerGroups.setAdapter(
+                ArrayAdapter(
+                    requireContext(),
+                    R.layout.dropdown_item,
+                    resources.getStringArray(R.array.spinner_third_course)
+                )
+            )
+            "Четвертый" -> binding.spinnerGroups.setAdapter(
+                ArrayAdapter(
+                    requireContext(),
+                    R.layout.dropdown_item,
+                    resources.getStringArray(R.array.spinner_fourth_course)
+                )
+            )
+        }
+    }
+
+    private fun saveSettings(group: String) {
+        val prefs = requireActivity().getSharedPreferences("my_settings", Context.MODE_PRIVATE)
+        val editor = prefs.edit()
+        editor.apply {
+            putString("course", courseText)
+            putString("group", group)
+            putBoolean("is_changed", true)
+            apply()
+        }
+    }
+
+    private fun setDefaultSettings() {
+        binding.apply {
+            tilGroups.visibility = View.INVISIBLE
+        }
+
+        fillOutSpinnerCourse()
+    }
+
+    private fun fillOutSpinnerCourse() {
+        val courses = resources.getStringArray(R.array.spinner_course)
+
+        binding.spinnerCourse.setAdapter(
+            ArrayAdapter(
+                requireContext(),
+                R.layout.dropdown_item,
+                courses
+            )
+        )
     }
 
     override fun onResume() {
         super.onResume()
 
-        fillOutSpinners()
-        selectCourse()
-        selectGroup()
+        //fillOutSpinners()
+        //selectCourse()
+        //selectGroup()
     }
 
     override fun onDestroyView() {
@@ -48,7 +139,7 @@ class SecondScreenFragment : Fragment() {
         _binding = null
     }
 
-    private fun fillOutSpinners() {
+    /*private fun fillOutSpinners() {
         val courses = resources.getStringArray(R.array.spinner_course)
         binding.spinnerCourse.setAdapter(
             ArrayAdapter(
@@ -117,5 +208,5 @@ class SecondScreenFragment : Fragment() {
         val editor = sharedPref.edit()
         editor.putString("Selected group", group)
         editor.apply()
-    }
+    }*/
 }
