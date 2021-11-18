@@ -12,7 +12,7 @@ import java.time.temporal.TemporalAdjusters
 
 class WeekViewModel: ViewModel() {
     companion object {
-        private val WEEK_TYPE_BASELINE_DAY = LocalDate.of(2021, 11, 8)
+        private val WEEK_TYPE_BASELINE_DAY = LocalDate.of(2021, 9, 1)
 
         private const val NUMERATOR = "Числитель"
         private const val DENOMINATOR = "Знаменатель"
