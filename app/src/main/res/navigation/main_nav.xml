@@ -24,7 +24,12 @@
         tools:layout="@layout/fragment_day_detail" >
         <argument
             android:name="currentDay"
-            app:argType="com.sector.scheduleapp.objects.Week" />
+            app:argType="com.sector.scheduleapp.objects.Week"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_dayDetailFragment_to_weekFragment"
+            app:destination="@id/weekFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashScreenFragment"

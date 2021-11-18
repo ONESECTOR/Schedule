@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.*
@@ -19,6 +20,8 @@ class DayDetailFragment : Fragment() {
     private var ref: DatabaseReference? = null
     private lateinit var adapter: DayDetailAdapter
 
+    private val args by navArgs<DayDetailFragmentArgs>()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,10 +29,25 @@ class DayDetailFragment : Fragment() {
         _binding = FragmentDayDetailBinding.inflate(inflater, container, false)
 
         setupRecyclerView()
+        getArgs()
         initDatabase()
-        readFromDatabase()
 
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        readFromDatabase()
+        showHomeFragment()
+    }
+
+    private fun showHomeFragment() {
+        binding.apply {
+            btnBack.setOnClickListener {
+                activity?.onBackPressed()
+            }
+        }
     }
 
     private fun setupRecyclerView() {
@@ -38,13 +56,17 @@ class DayDetailFragment : Fragment() {
         binding.recyclerView.adapter = adapter
     }
 
+    private fun getArgs(): String {
+        return args.currentDay!!.day
+    }
+
     private fun initDatabase() {
         FirebaseApp.initializeApp(requireContext())
 
         val institute = "ИМИТ"
         val group = "МОСб-202"
         val typeOfWeek = "Числитель"
-        val dayOfWeek = "Вторник"
+        val dayOfWeek = getArgs()
 
         ref = FirebaseDatabase.getInstance()
             .getReference(institute)
