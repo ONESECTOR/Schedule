@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@id/rl_bar">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_your_schedule"
+            android:id="@+id/tv_type_of_week"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/golos_semi_bold"

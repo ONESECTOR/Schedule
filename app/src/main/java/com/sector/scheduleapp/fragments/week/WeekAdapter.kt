@@ -16,7 +16,6 @@ class WeekAdapter(var daysOfWeek: List<Week>): RecyclerView.Adapter<WeekAdapter.
 
         fun bind(week: Week) = with(binding) {
             tvDay.text = week.day
-
         }
     }
 
