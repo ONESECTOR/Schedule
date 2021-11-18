@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/pure_white"
+        android:background="@color/white_smoke"
         android:padding="16dp">
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/golos_bold"
             android:text="Информатика и программирование"
-            android:textColor="@color/elegant_black"
+            android:textColor="@color/pure_gold"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
@@ -42,7 +42,7 @@
             android:layout_marginStart="8dp"
             android:fontFamily="@font/golos_regular"
             android:text="Григорьева А.Г., лекция, дистанционно"
-            android:textColor="@color/elegant_black"
+            android:textColor="@color/test_blue"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_description"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +66,7 @@
             android:layout_marginStart="8dp"
             android:fontFamily="@font/golos_regular"
             android:text="13:40 - 15:10"
-            android:textColor="@color/elegant_black"
+            android:textColor="@color/test_blue"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_time"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +79,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/ic_time"
+            android:background="@drawable/ic_audience"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_time" />
 
@@ -90,7 +90,7 @@
             android:layout_marginStart="8dp"
             android:fontFamily="@font/golos_regular"
             android:text="4.29Г"
-            android:textColor="@color/elegant_black"
+            android:textColor="@color/test_blue"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_aud"
             app:layout_constraintEnd_toEndOf="parent"

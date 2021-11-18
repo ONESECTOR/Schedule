@@ -6,12 +6,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.*
 import com.sector.scheduleapp.databinding.FragmentDayDetailBinding
 import com.sector.scheduleapp.objects.Day
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class DayDetailFragment : Fragment() {
     private var _binding: FragmentDayDetailBinding? = null
@@ -21,6 +26,7 @@ class DayDetailFragment : Fragment() {
     private lateinit var adapter: DayDetailAdapter
 
     private val args by navArgs<DayDetailFragmentArgs>()
+    //private val viewModel: DayDetailViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,6 +46,14 @@ class DayDetailFragment : Fragment() {
 
         readFromDatabase()
         showHomeFragment()
+
+        /*val viewModel = ViewModelProvider(requireActivity()).get(DayDetailViewModel::class.java)
+
+        viewModel.getCurrentDate()
+
+        viewModel.date().observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+            binding.tvDate.text = it.toString()
+        })*/
     }
 
     private fun showHomeFragment() {
