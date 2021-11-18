@@ -2,7 +2,9 @@ package com.sector.scheduleapp.fragments.week
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.ItemAdvantageBinding
 import com.sector.scheduleapp.objects.Advantage
 
@@ -11,8 +13,12 @@ class AdvantagesAdapter(var advantagesList: List<Advantage>): RecyclerView.Adapt
     class ViewHolder(private val binding: ItemAdvantageBinding): RecyclerView.ViewHolder(binding.root) {
 
         fun bind(advantage: Advantage) = with(binding) {
-            binding.tvSchedule.text = advantage.title
-            binding.tvDescription.text = advantage.description
+            tvSchedule.text = advantage.title
+            tvDescription.text = advantage.description
+
+            btnTune.setOnClickListener {
+                itemView.findNavController().navigate(R.id.action_weekFragment_to_settingsFragment)
+            }
         }
 
         companion object {
