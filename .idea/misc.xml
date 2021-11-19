@@ -5,13 +5,18 @@
       <map>
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/gradient.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_arrow_right.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_audience.xml" value="0.12222222222222222" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_back.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_book.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_chemistry.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_completed.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_database_empty.xml" value="0.125" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_description.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_globe.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_group.xml" value="0.25555555555555554" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_hat.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_laptop.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_logo.xml" value="0.25555555555555554" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_menu.xml" value="0.2361111111111111" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_notebook.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_settings.xml" value="0.2324074074074074" />
@@ -30,7 +35,7 @@
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_splash_screen.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_third_screen.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_view_pager.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_week.xml" value="0.2" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_week.xml" value="0.264" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/item_advantage.xml" value="0.264" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/item_day.xml" value="0.264" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/item_subject_detail.xml" value="0.2526041666666667" />

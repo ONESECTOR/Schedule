@@ -1,21 +1,18 @@
 package com.sector.scheduleapp.fragments.detail
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.*
 import com.sector.scheduleapp.databinding.FragmentDayDetailBinding
 import com.sector.scheduleapp.objects.Day
-import java.text.SimpleDateFormat
-import java.util.*
 import kotlin.collections.ArrayList
 
 class DayDetailFragment : Fragment() {
@@ -26,7 +23,6 @@ class DayDetailFragment : Fragment() {
     private lateinit var adapter: DayDetailAdapter
 
     private val args by navArgs<DayDetailFragmentArgs>()
-    //private val viewModel: DayDetailViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,14 +42,6 @@ class DayDetailFragment : Fragment() {
 
         readFromDatabase()
         showHomeFragment()
-
-        /*val viewModel = ViewModelProvider(requireActivity()).get(DayDetailViewModel::class.java)
-
-        viewModel.getCurrentDate()
-
-        viewModel.date().observe(viewLifecycleOwner, androidx.lifecycle.Observer {
-            binding.tvDate.text = it.toString()
-        })*/
     }
 
     private fun showHomeFragment() {
@@ -74,18 +62,31 @@ class DayDetailFragment : Fragment() {
         return args.currentDay!!.day
     }
 
+    private fun loadSettings(): Triple<String, String?, String?> {
+        val prefs = requireActivity().getSharedPreferences("my_settings", Context.MODE_PRIVATE)
+
+        val institute = "ИМИТ"
+        val group = prefs.getString("group", "Группа")
+        val mode = prefs.getString("mode", "Мод")
+
+        return Triple(institute, group, mode)
+    }
+
     private fun initDatabase() {
         FirebaseApp.initializeApp(requireContext())
 
-        val institute = "ИМИТ"
-        val group = "МОСб-202"
-        val typeOfWeek = "Числитель"
+        val (institute, group, mode) = loadSettings()
         val dayOfWeek = getArgs()
+
+        Log.d("Settings", institute)
+        Log.d("Settings", group!!)
+        Log.d("Settings", mode!!)
+
 
         ref = FirebaseDatabase.getInstance()
             .getReference(institute)
             .child(group)
-            .child(typeOfWeek)
+            .child(mode)
             .child(dayOfWeek)
     }
 
@@ -103,6 +104,12 @@ class DayDetailFragment : Fragment() {
                     }
 
                     adapter.submitList(list)
+
+                } else {
+                    binding.apply {
+                        lrDbEmpty.visibility = View.VISIBLE
+                        recyclerView.visibility = View.INVISIBLE
+                    }
                 }
             }
 

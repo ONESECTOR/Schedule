@@ -1,5 +1,6 @@
 package com.sector.scheduleapp.fragments.week
 
+import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -17,7 +18,6 @@ import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.FragmentWeekBinding
 import com.sector.scheduleapp.objects.Advantage
 import com.sector.scheduleapp.objects.Week
-import java.time.LocalDate
 
 class WeekFragment : Fragment() {
     private var _binding: FragmentWeekBinding? = null
@@ -57,6 +57,12 @@ class WeekFragment : Fragment() {
 
         viewModel.weekType.observe(viewLifecycleOwner, Observer { type ->
             binding.tvTypeOfWeek.text = type.toString()
+
+            val prefs = requireActivity().getSharedPreferences("my_settings", Context.MODE_PRIVATE)
+
+            val editor = prefs.edit()
+            editor.putString("mode", type.toString())
+            editor.apply()
         })
     }
 
