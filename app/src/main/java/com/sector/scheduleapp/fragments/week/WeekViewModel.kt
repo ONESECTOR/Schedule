@@ -3,12 +3,14 @@ package com.sector.scheduleapp.fragments.week
 import androidx.lifecycle.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
 import java.time.DayOfWeek
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
 import java.time.temporal.ChronoUnit
 import java.time.temporal.TemporalAdjusters
+import java.util.*
 
 class WeekViewModel: ViewModel() {
     companion object {
@@ -21,8 +23,20 @@ class WeekViewModel: ViewModel() {
     private val mutableWeekType = MutableLiveData<String>()
     val weekType: LiveData<String> get() = mutableWeekType
 
+    private val mutableCurrentDay = MutableLiveData<String>()
+    val currentDate: LiveData<String> get() = mutableCurrentDay
+
     init {
         updateCurrentWeekType()
+        getCurrentDay()
+    }
+
+    private fun getCurrentDay() {
+        val date = Date()
+        val dateFormat = SimpleDateFormat("dd MMMM, yyyy", Locale.getDefault())
+
+        val currentDay = dateFormat.format(date)
+        mutableCurrentDay.value = currentDay
     }
 
     private fun updateCurrentWeekType() {

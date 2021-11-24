@@ -18,6 +18,10 @@ import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.FragmentWeekBinding
 import com.sector.scheduleapp.objects.Advantage
 import com.sector.scheduleapp.objects.Week
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+import java.time.Month
+import java.util.*
 
 class WeekFragment : Fragment() {
     private var _binding: FragmentWeekBinding? = null
@@ -55,6 +59,7 @@ class WeekFragment : Fragment() {
         setupRecyclerViewDays()
         openSettingsFragment()
 
+        // Observe LiveData
         viewModel.weekType.observe(viewLifecycleOwner, Observer { type ->
             binding.tvTypeOfWeek.text = type.toString()
 
@@ -63,6 +68,10 @@ class WeekFragment : Fragment() {
             val editor = prefs.edit()
             editor.putString("mode", type.toString())
             editor.apply()
+        })
+
+        viewModel.currentDate.observe(viewLifecycleOwner, Observer { day ->
+            binding.tvCurrentDate.text = day.toString()
         })
     }
 
