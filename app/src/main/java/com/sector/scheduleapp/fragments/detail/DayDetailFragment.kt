@@ -33,6 +33,7 @@ class DayDetailFragment : Fragment() {
         setupRecyclerView()
         getArgs()
         initDatabase()
+        setDate()
 
         return binding.root
     }
@@ -42,6 +43,12 @@ class DayDetailFragment : Fragment() {
 
         readFromDatabase()
         showHomeFragment()
+    }
+
+    private fun setDate() {
+        binding.apply {
+            tvDate.text = getArgs()
+        }
     }
 
     private fun showHomeFragment() {
