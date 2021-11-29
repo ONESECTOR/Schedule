@@ -2,7 +2,6 @@ package com.sector.scheduleapp.fragments.settings
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -65,8 +64,6 @@ class SettingsFragment : Fragment() {
     }
 
     private fun fillOutSpinnerGroup() {
-        Log.d("MyTag", "fillOutSpinnerGroup() вызвана")
-
         when (course) {
             "Первый" -> {
                 binding.spinnerGroups.setAdapter(
@@ -104,7 +101,6 @@ class SettingsFragment : Fragment() {
     }
 
     private fun fillOutSpinnerCourse() {
-        Log.d("MyTag", "fillOutSpinnerCourse() вызвана")
         val courses = resources.getStringArray(R.array.spinner_course)
 
         binding.spinnerCourse.setAdapter(
@@ -117,21 +113,16 @@ class SettingsFragment : Fragment() {
     }
 
     private fun selectCourse(selected: String) {
-        Log.d("MyTag", "selectCourse() вызвана")
-
         course = selected
     }
 
     private fun selectGroup(selected: String) {
-        Log.d("var", selected)
-        Log.d("MyTag", "selectGroup() вызвана")
         group = selected
 
         saveSettings() // сохраняем настройки
     }
 
     private fun saveSettings() {
-        Log.d("MyTag", "saveSettings() вызвана")
         val prefs = requireActivity().getSharedPreferences("my_settings", Context.MODE_PRIVATE)
         val editor = prefs.edit()
 
@@ -144,7 +135,6 @@ class SettingsFragment : Fragment() {
     }
 
     private fun loadSettings() {
-        Log.d("MyTag", "loadSettings() вызвана")
         val prefs = requireActivity().getSharedPreferences("my_settings", Context.MODE_PRIVATE)
 
         val courseText = prefs.getString("course", "Курс")
@@ -187,7 +177,6 @@ class SettingsFragment : Fragment() {
     }
 
     private fun isChanged(): Boolean {
-        Log.d("MyTag", "isChanged() вызвана")
         val prefs = requireActivity().getSharedPreferences("my_settings", Context.MODE_PRIVATE)
 
         return prefs.getBoolean("is_changed", false)
@@ -198,7 +187,6 @@ class SettingsFragment : Fragment() {
     }
 
     override fun onDestroyView() {
-        Log.d("MyTag", "onDestroy() вызвался")
         super.onDestroyView()
         _binding = null
     }

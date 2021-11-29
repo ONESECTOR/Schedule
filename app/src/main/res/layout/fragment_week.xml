@@ -24,9 +24,10 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/golos_semi_bold"
-            android:text="Home"
+            android:text="@string/home"
             android:textColor="@color/test_blue"
-            android:textSize="21sp" />
+            android:textSize="21sp"
+            tools:ignore="RelativeOverlap" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_settings"
@@ -54,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/golos_semi_bold"
-            android:text="Числитель"
+            android:text="@string/numerator"
             android:textSize="22sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -63,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/golos_medium"
-            android:text="October 24th, 2021"
+            android:text="@string/test_date"
             android:textColor="@color/test_blue"
             android:textSize="20sp" />
 
@@ -92,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/golos_medium"
-            android:text="Дни недели"
+            android:text="@string/days_of_the_week"
             android:textSize="22sp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

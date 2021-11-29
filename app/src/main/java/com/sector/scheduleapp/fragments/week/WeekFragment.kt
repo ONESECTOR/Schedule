@@ -1,14 +1,11 @@
 package com.sector.scheduleapp.fragments.week
 
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
@@ -18,10 +15,6 @@ import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.FragmentWeekBinding
 import com.sector.scheduleapp.objects.Advantage
 import com.sector.scheduleapp.objects.Week
-import java.text.DateFormat
-import java.text.SimpleDateFormat
-import java.time.Month
-import java.util.*
 
 class WeekFragment : Fragment() {
     private var _binding: FragmentWeekBinding? = null
@@ -51,7 +44,6 @@ class WeekFragment : Fragment() {
         return binding.root
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -59,7 +51,7 @@ class WeekFragment : Fragment() {
         setupRecyclerViewDays()
         openSettingsFragment()
 
-        // Observe LiveData
+        // Observe LiveData (type of week)
         viewModel.weekType.observe(viewLifecycleOwner, Observer { type ->
             binding.tvTypeOfWeek.text = type.toString()
 
@@ -70,6 +62,7 @@ class WeekFragment : Fragment() {
             editor.apply()
         })
 
+        // Observe LiveData (day of week)
         viewModel.currentDate.observe(viewLifecycleOwner, Observer { day ->
             binding.tvCurrentDate.text = day.toString()
         })

@@ -35,7 +35,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/golos_semi_bold"
                     android:maxLength="15"
-                    android:text="Расписание"
+                    android:text="@string/advantage_title"
                     android:textColor="#f9b16e"
                     android:textSize="26sp" />
 
@@ -46,7 +46,7 @@
                     android:layout_below="@+id/tv_schedule"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/golos_regular"
-                    android:text="Всегда под рукой!"
+                    android:text="@string/advantage_description"
                     android:textSize="16sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -59,7 +59,7 @@
                     android:fontFamily="@font/golos_regular"
                     android:paddingStart="16dp"
                     android:paddingEnd="16dp"
-                    android:text="Настроить"
+                    android:text="@string/advantage_button"
                     android:textColor="@color/white_smoke" />
 
             </RelativeLayout>

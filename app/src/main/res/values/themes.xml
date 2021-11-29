@@ -3,7 +3,7 @@
     <style name="Theme.ScheduleApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pure_gold</item>
-        <item name="colorPrimaryVariant">@color/milk_white</item>
+        <item name="colorPrimaryVariant">@color/white_smoke</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

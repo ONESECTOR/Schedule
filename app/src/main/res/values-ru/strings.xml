@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Basic -->
+    <string name="course">Курс</string>
+    <string name="group">Группа</string>
+    <string name="choose_course">Выберите курс</string>
+    <string name="choose_group">Выберите группу</string>
+
+    <!-- OnBoarding fragments -->
+    <string name="next">Далее</string>
+    <string name="skip">Пропустить</string>
+    <string name="finish">Завершить</string>
+    <string name="onboarding_first_title">Ваше расписание, где угодно</string>
+    <string name="onboarding_first_under_title">Больше ничего не нужно запоминать</string>
+    <string name="onboarding_second_choose_group">Выберите вашу учебную группу</string>
+    <string name="onboarding_third_title">Всё готово. Наслаждайтесь!</string>
+    <string name="onboarding_third_under_title">Вы всегда можете что-то поменять в настройках приложения</string>
+
+
     <!-- Week fragment -->
     <string name="monday">Понедельник</string>
     <string name="tuesday">Вторник</string>
@@ -7,37 +24,20 @@
     <string name="thursday">Четверг</string>
     <string name="friday">Пятница</string>
     <string name="saturday">Суббота</string>
-    <string name="this_week">Текущая неделя</string>
     <string name="numerator">Числитель</string>
     <string name="denominator">Знаменатель</string>
-    <string name="next">Далее</string>
-    <string name="skip">Пропустить</string>
-    <string name="finish">Завершить</string>
+    <string name="home">Главная</string>
+    <string name="test_date">24 октября, 2021</string>
+    <string name="days_of_the_week">Дни недели</string>
+    <string name="advantage_title">Расписание</string>
+    <string name="advantage_button">Настроить</string>
+    <string name="advantage_description">Всегда под рукой!</string>
+    <string name="test_day_of_week">Понедельник</string>
 
-    <string-array name="spinner_course">
-        <item>Первый</item>
-        <item>Второй</item>
-        <item>Третий</item>
-        <item>Четвертый</item>
-    </string-array>
+    <!-- Settings fragment -->
+    <string name="common">Общие</string>
+    <string name="settings">Настройки</string>
 
-    <string-array name="spinner_first_course">
-        <item>МОСб-211</item>
-        <item>МОСб-212</item>
-    </string-array>
-
-    <string-array name="spinner_second_course">
-        <item>МОСб-201</item>
-        <item>МОСб-202</item>
-    </string-array>
-
-    <string-array name="spinner_third_course">
-        <item>МОСб-191</item>
-        <item>МОСб-192</item>
-    </string-array>
-
-    <string-array name="spinner_fourth_course">
-        <item>МОСб-181</item>
-        <item>МОСб-182</item>
-    </string-array>
+    <!-- Day detail fragment-->
+    <string name="day_detail_error_empty_database">Выберите группу в настройках приложения!</string>
 </resources>

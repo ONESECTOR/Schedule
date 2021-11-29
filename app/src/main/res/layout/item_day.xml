@@ -37,7 +37,7 @@
                 android:layout_below="@+id/iv_icon_day"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/golos_medium"
-                android:text="Понедельник"
+                android:text="@string/test_day_of_week"
                 android:textColor="#f9b16e"
                 android:textSize="20sp" />
 

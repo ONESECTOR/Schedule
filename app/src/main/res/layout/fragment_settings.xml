@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/golos_semi_bold"
-            android:text="Settings"
+            android:text="@string/settings"
             android:textColor="@color/test_blue"
             android:textSize="21sp" />
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-        android:text="Общие"
+        android:text="@string/common"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rl_bar" />
@@ -62,7 +62,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Выберите курс">
+            android:hint="@string/choose_course">
 
             <AutoCompleteTextView
                 android:id="@+id/spinner_course"
@@ -70,7 +70,8 @@
                 android:layout_height="wrap_content"
                 android:dropDownHeight="wrap_content"
                 android:inputType="none"
-                android:text="Курс"/>
+                android:text="@string/course"
+                tools:ignore="LabelFor" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,14 +81,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="Выберите группу">
+            android:hint="@string/choose_group">
 
             <AutoCompleteTextView
                 android:id="@+id/spinner_groups"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none"
-                android:text="Группа"/>
+                android:text="@string/group"
+                tools:ignore="LabelFor" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

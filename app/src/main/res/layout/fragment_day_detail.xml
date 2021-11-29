@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/golos_semi_bold"
-            android:text="Вторник, 15 ноября"
+            android:text="@string/test_string"
             android:textColor="@color/test_blue"
             android:textSize="21sp" />
 
@@ -60,7 +60,7 @@
             android:id="@+id/tv_is_empty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Выберите группу в настройках приложения!"
+            android:text="@string/day_detail_error_empty_database"
             android:textAlignment="center"
             android:textColor="@color/test_blue"
             android:textSize="18sp" />
