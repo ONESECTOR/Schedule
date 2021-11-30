@@ -77,4 +77,7 @@
     <string name="test_subject_info" translatable="false">Григорьева А.Г., лекция, дистанционно</string>
     <string name="test_subject_time" translatable="false">13:40 \- 15:10</string>
     <string name="test_subject_classroom" translatable="false">4.29Г</string>
+
+    <!-- Splash screen fragment -->
+    <string name="developer_text">\"VolSU Schedule\" by onesector</string>
 </resources>

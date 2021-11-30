@@ -40,4 +40,5 @@
 
     <!-- Day detail fragment-->
     <string name="day_detail_error_empty_database">Выберите группу в настройках приложения!</string>
+    <string name="developer_text">\"Расписание ВолГУ\" by onesector</string>
 </resources>

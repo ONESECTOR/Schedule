@@ -4,16 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white_smoke"
+    android:fitsSystemWindows="true"
+    android:padding="12dp"
     tools:context=".fragments.splash.SplashScreenFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:background="@drawable/ic_logo"
+        android:id="@+id/ivLogo"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:background="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/elegant_black"
+        android:fontFamily="@font/golos_regular"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/developer_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
