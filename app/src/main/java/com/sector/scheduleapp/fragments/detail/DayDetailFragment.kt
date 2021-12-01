@@ -85,15 +85,10 @@ class DayDetailFragment : Fragment() {
         val (institute, group, mode) = loadSettings()
         val dayOfWeek = getArgs()
 
-        Log.d("Settings", institute)
-        Log.d("Settings", group!!)
-        Log.d("Settings", mode!!)
-
-
         ref = FirebaseDatabase.getInstance()
             .getReference(institute)
-            .child(group)
-            .child(mode)
+            .child(group!!)
+            .child(mode!!)
             .child(dayOfWeek)
     }
 
@@ -112,8 +107,16 @@ class DayDetailFragment : Fragment() {
 
                     adapter.submitList(list)
 
+                    binding.apply {
+                        shimmer.stopShimmer()
+                        shimmer.visibility = View.GONE
+                    }
+
                 } else {
                     binding.apply {
+                        shimmer.stopShimmer()
+                        shimmer.visibility = View.GONE
+
                         lrDbEmpty.visibility = View.VISIBLE
                         recyclerView.visibility = View.INVISIBLE
                     }
@@ -121,9 +124,23 @@ class DayDetailFragment : Fragment() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-
+                Log.e("ErrorFirebase", error.toString())
             }
         })
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.apply {
+            shimmer.startShimmer()
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        binding.apply {
+            shimmer.startShimmer()
+        }
     }
 
     override fun onDestroyView() {

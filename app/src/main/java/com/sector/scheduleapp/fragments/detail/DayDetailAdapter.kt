@@ -47,5 +47,4 @@ class DayDetailAdapter: ListAdapter<Day, DayDetailAdapter.ViewHolder>(ItemCompar
             return oldItem == newItem
         }
     }
-
 }

@@ -70,4 +70,7 @@ dependencies {
 
     // RecyclerView Animators
     implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
+
+    // Shimmer effect
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
 }
