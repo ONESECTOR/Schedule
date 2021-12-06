@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/gradient.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_arrow_right.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_audience.xml" value="0.12222222222222222" />
@@ -16,14 +17,18 @@
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_group.xml" value="0.25555555555555554" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_hat.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_laptop.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_logo.xml" value="0.25555555555555554" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_menu.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_next.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_notebook.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_settings.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_student.xml" value="0.25462962962962965" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_student2.xml" value="0.25462962962962965" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_time.xml" value="0.262037037037037" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/item_background.xml" value="0.24259259259259258" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/round_button.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/rounded_placeholder.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/dropdown_item.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_day_detail.xml" value="0.2526041666666667" />
@@ -38,7 +43,8 @@
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/fragment_week.xml" value="0.264" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/item_advantage.xml" value="0.264" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/item_day.xml" value="0.264" />
-        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/item_subject_detail.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/item_subject_detail.xml" value="0.264" />
+        <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/shimmer_layout.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/nqwis/AndroidStudioProjects/ScheduleApp/app/src/main/res/xml/root_preferences.xml" value="0.2526041666666667" />
       </map>
     </option>

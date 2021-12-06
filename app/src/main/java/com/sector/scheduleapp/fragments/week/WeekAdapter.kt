@@ -16,6 +16,7 @@ class WeekAdapter(var daysOfWeek: List<Week>): RecyclerView.Adapter<WeekAdapter.
 
         fun bind(week: Week) = with(binding) {
             tvDay.text = week.day
+            tvNumberOfDay.text = week.numberOfDay
         }
     }
 
@@ -25,11 +26,13 @@ class WeekAdapter(var daysOfWeek: List<Week>): RecyclerView.Adapter<WeekAdapter.
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(daysOfWeek[position])
+        with(holder) {
+            bind(daysOfWeek[position])
 
-        holder.itemView.setOnClickListener {
-            val action = WeekFragmentDirections.actionWeekFragmentToDayDetailFragment(daysOfWeek[position])
-            holder.itemView.findNavController().navigate(action)
+            binding.btnMore.setOnClickListener {
+                val action = WeekFragmentDirections.actionWeekFragmentToDayDetailFragment(daysOfWeek[position])
+                holder.itemView.findNavController().navigate(action)
+            }
         }
     }
 

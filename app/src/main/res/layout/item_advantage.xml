@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/pure_white"
+        android:background="@color/elegant_black"
         android:padding="16dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -36,7 +36,7 @@
                     android:fontFamily="@font/golos_semi_bold"
                     android:maxLength="15"
                     android:text="@string/advantage_title"
-                    android:textColor="#f9b16e"
+                    android:textColor="@color/white"
                     android:textSize="26sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -47,6 +47,7 @@
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/golos_regular"
                     android:text="@string/advantage_description"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <androidx.appcompat.widget.AppCompatButton

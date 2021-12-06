@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_smoke"
     tools:context=".fragments.settings.SettingsFragment">
 
     <RelativeLayout
@@ -32,7 +31,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/golos_semi_bold"
             android:text="@string/settings"
-            android:textColor="@color/test_blue"
+            android:textColor="@color/elegant_black"
             android:textSize="21sp" />
 
     </RelativeLayout>
@@ -44,6 +43,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:text="@string/common"
+        android:textColor="@color/elegant_black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rl_bar" />

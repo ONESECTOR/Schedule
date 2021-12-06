@@ -5,7 +5,6 @@
     android:id="@+id/constraint_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_smoke"
     tools:context=".fragments.detail.DayDetailFragment">
 
     <RelativeLayout
@@ -33,7 +32,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/golos_semi_bold"
             android:text="@string/test_string"
-            android:textColor="@color/test_blue"
+            android:textColor="@color/elegant_black"
             android:textSize="21sp" />
 
     </RelativeLayout>
@@ -62,7 +61,7 @@
             android:layout_height="wrap_content"
             android:text="@string/day_detail_error_empty_database"
             android:textAlignment="center"
-            android:textColor="@color/test_blue"
+            android:textColor="@color/elegant_black"
             android:textSize="18sp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -80,28 +79,26 @@
 
     <com.facebook.shimmer.ShimmerFrameLayout
         android:id="@+id/shimmer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rl_bar"
-        app:shimmer_base_color="#808080"
-        app:shimmer_colored="true">
+        app:layout_constraintTop_toBottomOf="@+id/rl_bar">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/item_subject_detail" />
+            <include layout="@layout/shimmer_layout" />
 
-            <include layout="@layout/item_subject_detail" />
+            <include layout="@layout/shimmer_layout" />
 
-            <include layout="@layout/item_subject_detail" />
+            <include layout="@layout/shimmer_layout" />
 
-            <include layout="@layout/item_subject_detail" />
+            <include layout="@layout/shimmer_layout" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

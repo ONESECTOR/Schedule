@@ -15,18 +15,20 @@ import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.FragmentWeekBinding
 import com.sector.scheduleapp.objects.Advantage
 import com.sector.scheduleapp.objects.Week
+import jp.wasabeef.recyclerview.animators.SlideInLeftAnimator
+import jp.wasabeef.recyclerview.animators.SlideInUpAnimator
 
 class WeekFragment : Fragment() {
     private var _binding: FragmentWeekBinding? = null
     private val binding get() = _binding!!
 
     private val daysOfWeek = mutableListOf(
-        Week(day = "Понедельник"),
-        Week(day = "Вторник"),
-        Week(day = "Среда"),
-        Week(day = "Четверг"),
-        Week(day = "Пятница"),
-        Week(day = "Суббота")
+        Week(day = "Понедельник", numberOfDay = "1"),
+        Week(day = "Вторник", numberOfDay = "2"),
+        Week(day = "Среда", numberOfDay = "3"),
+        Week(day = "Четверг", numberOfDay = "4"),
+        Week(day = "Пятница", numberOfDay = "5"),
+        Week(day = "Суббота", numberOfDay = "6")
     )
 
     private val advantagesList = mutableListOf(
@@ -75,14 +77,24 @@ class WeekFragment : Fragment() {
 
     private fun setupRecyclerViewDays() = with(binding) {
         val adapter = WeekAdapter(daysOfWeek)
-        binding.rvDays.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        binding.rvDays.adapter = adapter
+        binding.apply {
+            rvDays.layoutManager = LinearLayoutManager(requireContext())
+            rvDays.adapter = adapter
+            rvDays.itemAnimator = SlideInUpAnimator().apply {
+                addDuration = 300
+            }
+        }
     }
 
     private fun setupRecyclerViewAdvantages() = with(binding) {
         val adapter = AdvantagesAdapter(advantagesList)
-        binding.rvAdvantage.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        binding.rvAdvantage.adapter = adapter
+        binding.apply {
+            rvAdvantage.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+            rvAdvantage.adapter = adapter
+            rvAdvantage.itemAnimator = SlideInLeftAnimator().apply {
+                addDuration = 300
+            }
+        }
     }
 
     private fun openSettingsFragment() {

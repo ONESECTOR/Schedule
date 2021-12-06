@@ -17,19 +17,10 @@
             android:id="@+id/rl_placeholder"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@drawable/rounded_placeholder"
+            android:background="@color/gray"
             android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_number_of_subject"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/golos_medium"
-                android:text="@string/test_number"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
 
         </RelativeLayout>
 
@@ -38,9 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/golos_bold"
-            android:text="@string/test_subject_name"
-            android:textColor="@color/elegant_black"
+            android:background="@color/gray"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
@@ -61,9 +50,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/golos_regular"
-            android:text="@string/test_subject_info"
-            android:textColor="@color/elegant_black"
+            android:background="@color/gray"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_description"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,12 +69,10 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_time"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/golos_regular"
-            android:text="@string/test_subject_time"
-            android:textColor="@color/elegant_black"
+            android:background="@color/gray"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_time"
             app:layout_constraintEnd_toEndOf="parent"
@@ -106,12 +91,10 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_aud"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/golos_regular"
-            android:text="@string/test_subject_classroom"
-            android:textColor="@color/elegant_black"
+            android:background="@color/gray"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_aud"
             app:layout_constraintEnd_toEndOf="parent"

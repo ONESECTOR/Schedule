@@ -10,13 +10,10 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Basic -->
-    <color name="midnight_blue">#002d46</color>
-    <color name="golden">#e6a92a</color>
     <color name="elegant_black">#201E22</color>
-    <color name="light_gray">#B4B9CD</color>
+    <color name="gray">#808080</color>
     <color name="pure_white">#F0F0F0</color>
     <color name="milk_white">#ECECEC</color>
     <color name="white_smoke">#EFF0F2</color>
-    <color name="test_blue">#293039</color>
-    <color name="pure_gold">#f9b16e</color>
+    <color name="crimson_red">#dc3642</color>
 </resources>

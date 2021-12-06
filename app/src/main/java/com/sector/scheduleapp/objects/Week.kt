@@ -5,5 +5,6 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Week(
-    val day: String
+    val day: String,
+    val numberOfDay: String
 ): Parcelable

@@ -2,6 +2,7 @@
     <!-- Basic -->
     <string name="app_name" translatable="false">Schedule App</string>
     <string name="test_string" translatable="false">Test</string>
+    <string name="test_number" translatable="false">4</string>
     <string name="course">Course</string>
     <string name="group">Group</string>
     <string name="choose_course">Select a course</string>

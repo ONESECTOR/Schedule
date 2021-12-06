@@ -17,6 +17,7 @@ class DayDetailAdapter: ListAdapter<Day, DayDetailAdapter.ViewHolder>(ItemCompar
             tvInfo.text = "${day.teacher}, ${day.type}"
             tvTime.text = day.time
             tvAud.text = day.classroom
+            tvNumberOfSubject.text = (adapterPosition + 1).toString()
         }
 
         companion object {
