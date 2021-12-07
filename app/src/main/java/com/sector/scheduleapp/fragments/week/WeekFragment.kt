@@ -24,18 +24,8 @@ class WeekFragment : Fragment() {
     private var _binding: FragmentWeekBinding? = null
     private val binding get() = _binding!!
 
-    private val daysOfWeek = mutableListOf(
-        Week(day = "Понедельник", numberOfDay = "1"),
-        Week(day = "Вторник", numberOfDay = "2"),
-        Week(day = "Среда", numberOfDay = "3"),
-        Week(day = "Четверг", numberOfDay = "4"),
-        Week(day = "Пятница", numberOfDay = "5"),
-        Week(day = "Суббота", numberOfDay = "6")
-    )
-
-    private val advantagesList = mutableListOf(
-        Advantage(title = "Расписание", description = "Всегда под рукой!")
-    )
+    private lateinit var advantagesList: MutableList<Advantage>
+    private lateinit var daysList: MutableList<Week>
 
     private val viewModel: WeekViewModel by viewModels()
 
@@ -46,6 +36,27 @@ class WeekFragment : Fragment() {
         _binding = FragmentWeekBinding.inflate(inflater, container, false)
 
         return binding.root
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        advantagesList = mutableListOf(
+            Advantage(
+                title = resources.getString(R.string.advantage_title),
+                description = resources.getString(R.string.advantage_description),
+                symbol = resources.getString(R.string.advantage_symbol_information)
+            )
+        )
+
+        daysList = mutableListOf(
+            Week(day = "Понедельник", numberOfDay = "1"),
+            Week(day = "Вторник", numberOfDay = "2"),
+            Week(day = "Среда", numberOfDay = "3"),
+            Week(day = "Четверг", numberOfDay = "4"),
+            Week(day = "Пятница", numberOfDay = "5"),
+            Week(day = "Суббота", numberOfDay = "6")
+        )
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -78,7 +89,7 @@ class WeekFragment : Fragment() {
     }
 
     private fun setupRecyclerViewDays() = with(binding) {
-        val adapter = WeekAdapter(daysOfWeek)
+        val adapter = WeekAdapter(daysList)
         binding.apply {
             rvDays.layoutManager = LinearLayoutManager(requireContext())
             rvDays.adapter = adapter

@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_weekFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_weekFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
     </fragment>
     <fragment
         android:id="@+id/dayDetailFragment"
@@ -65,6 +68,15 @@
         tools:layout="@layout/fragment_settings" >
         <action
             android:id="@+id/action_settingsFragment_to_weekFragment"
+            app:destination="@id/weekFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.sector.scheduleapp.fragments.about.AboutAppFragment"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app" >
+        <action
+            android:id="@+id/action_aboutAppFragment_to_weekFragment"
             app:destination="@id/weekFragment" />
     </fragment>
 </navigation>

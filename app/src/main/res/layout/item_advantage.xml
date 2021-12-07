@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="16dp"
@@ -12,68 +11,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/elegant_black"
-        android:padding="16dp">
+        android:padding="20dp">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2"
+        <RelativeLayout
+            android:id="@+id/rl_placeholder"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_placeholder_white"
+            android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tv_schedule"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/golos_semi_bold"
-                    android:maxLength="15"
-                    android:text="@string/advantage_title"
-                    android:textColor="@color/white"
-                    android:textSize="26sp" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tv_description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_schedule"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/golos_regular"
-                    android:text="@string/advantage_description"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_tune"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/round_button"
-                    android:fontFamily="@font/golos_regular"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"
-                    android:text="@string/advantage_button"
-                    android:textColor="@color/white_smoke" />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:id="@+id/iv_student"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_symbol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/ic_student"
-                tools:ignore="ContentDescription" />
+                android:fontFamily="@font/golos_medium"
+                android:text="@string/test_symbol"
+                android:textColor="@color/elegant_black"
+                android:textSize="20sp" />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/golos_semi_bold"
+            android:text="@string/advantage_title"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@id/rl_placeholder"
+            app:layout_constraintStart_toEndOf="@+id/rl_placeholder"
+            app:layout_constraintTop_toTopOf="@id/rl_placeholder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/golos_regular"
+            android:text="@string/advantage_description"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rl_placeholder" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

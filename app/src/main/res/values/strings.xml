@@ -3,6 +3,7 @@
     <string name="app_name" translatable="false">Schedule App</string>
     <string name="test_string" translatable="false">Test</string>
     <string name="test_number" translatable="false">4</string>
+    <string name="test_symbol" translatable="false">N</string>
     <string name="course">Course</string>
     <string name="group">Group</string>
     <string name="choose_course">Select a course</string>
@@ -63,9 +64,10 @@
     <string name="test_date">October 24, 2021</string>
     <string name="home">Home</string>
     <string name="days_of_the_week">Days of the week</string>
-    <string name="advantage_title">Schedule</string>
-    <string name="advantage_description">Always at hand!</string>
-    <string name="advantage_button">Tune</string>
+    <string name="advantage_title">Your schedule</string>
+    <string name="advantage_description">Learn more about who We are\nand why we created this app</string>
+    <string name="advantage_symbol_news">N</string>
+    <string name="advantage_symbol_information">I</string>
     <string name="test_day_of_week">Monday</string>
 
     <!-- Settings fragment -->
@@ -74,11 +76,14 @@
 
     <!-- Day detail fragment-->
     <string name="day_detail_error_empty_database">Select a group in the app settings!</string>
-    <string name="test_subject_name" translatable="false">Информатика и программирование</string>
+    <string name="test_subject_name" translatable="false">Технология разработки программного обеспечения (1-ая группа)</string>
     <string name="test_subject_info" translatable="false">Григорьева А.Г., лекция, дистанционно</string>
     <string name="test_subject_time" translatable="false">13:40 \- 15:10</string>
     <string name="test_subject_classroom" translatable="false">4.29Г</string>
 
     <!-- Splash screen fragment -->
     <string name="developer_text">\"VolSU Schedule\" by onesector</string>
+
+    <!-- About app fragment -->
+    <string name="about_app">About app</string>
 </resources>

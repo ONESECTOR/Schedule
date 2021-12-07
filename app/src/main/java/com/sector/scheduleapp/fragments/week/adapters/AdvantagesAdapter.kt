@@ -13,11 +13,12 @@ class AdvantagesAdapter(var advantagesList: List<Advantage>): RecyclerView.Adapt
     class ViewHolder(private val binding: ItemAdvantageBinding): RecyclerView.ViewHolder(binding.root) {
 
         fun bind(advantage: Advantage) = with(binding) {
-            tvSchedule.text = advantage.title
+            tvTitle.text = advantage.title
             tvDescription.text = advantage.description
+            tvSymbol.text = advantage.symbol
 
-            btnTune.setOnClickListener {
-                itemView.findNavController().navigate(R.id.action_weekFragment_to_settingsFragment)
+            itemView.setOnClickListener {
+                itemView.findNavController().navigate(R.id.action_weekFragment_to_aboutAppFragment)
             }
         }
 

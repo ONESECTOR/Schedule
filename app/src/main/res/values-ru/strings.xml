@@ -29,9 +29,8 @@
     <string name="home">Главная</string>
     <string name="test_date">24 октября, 2021</string>
     <string name="days_of_the_week">Дни недели</string>
-    <string name="advantage_title">Расписание</string>
-    <string name="advantage_button">Настроить</string>
-    <string name="advantage_description">Всегда под рукой!</string>
+    <string name="advantage_title">Ваше расписание</string>
+    <string name="advantage_description">Узнайте подробнее о том, кто Мы,\nи зачем создавали это приложение</string>
     <string name="test_day_of_week">Понедельник</string>
 
     <!-- Settings fragment -->
@@ -41,4 +40,7 @@
     <!-- Day detail fragment-->
     <string name="day_detail_error_empty_database">Выберите группу в настройках приложения!</string>
     <string name="developer_text">\"Расписание ВолГУ\" by onesector</string>
+    <string name="advantage_symbol_news">Н</string>
+    <string name="advantage_symbol_information">И</string>
+    <string name="about_app">О приложении</string>
 </resources>

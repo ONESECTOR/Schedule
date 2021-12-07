@@ -13,11 +13,11 @@ class DayDetailAdapter: ListAdapter<Day, DayDetailAdapter.ViewHolder>(ItemCompar
     class ViewHolder(private val binding: ItemSubjectDetailBinding): RecyclerView.ViewHolder(binding.root) {
 
         fun bind(day: Day) = with(binding) {
-            tvSubject.text = day.subject
-            tvInfo.text = "${day.teacher}, ${day.type}"
-            tvTime.text = day.time
-            tvAud.text = day.classroom
-            tvNumberOfSubject.text = (adapterPosition + 1).toString()
+            tvSubject?.text = day.subject
+            tvInfo?.text = "${day.teacher}, ${day.type}"
+            tvTime?.text = day.time
+            tvAud?.text = day.classroom
+            tvNumberOfSubject?.text = (adapterPosition + 1).toString()
         }
 
         companion object {
