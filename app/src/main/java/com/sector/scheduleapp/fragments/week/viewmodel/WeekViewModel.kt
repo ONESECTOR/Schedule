@@ -1,4 +1,4 @@
-package com.sector.scheduleapp.fragments.week
+package com.sector.scheduleapp.fragments.week.viewmodel
 
 import androidx.lifecycle.*
 import kotlinx.coroutines.delay

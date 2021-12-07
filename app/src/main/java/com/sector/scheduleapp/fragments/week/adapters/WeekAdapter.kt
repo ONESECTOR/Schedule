@@ -1,4 +1,4 @@
-package com.sector.scheduleapp.fragments.week
+package com.sector.scheduleapp.fragments.week.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.ItemDayBinding
+import com.sector.scheduleapp.fragments.week.WeekFragmentDirections
 import com.sector.scheduleapp.objects.Week
 
 class WeekAdapter(var daysOfWeek: List<Week>): RecyclerView.Adapter<WeekAdapter.ViewHolder>() {

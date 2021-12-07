@@ -1,4 +1,4 @@
-package com.sector.scheduleapp.onboarding
+package com.sector.scheduleapp.onboarding.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

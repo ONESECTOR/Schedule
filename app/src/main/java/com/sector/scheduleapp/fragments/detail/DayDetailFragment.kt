@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.*
 import com.sector.scheduleapp.databinding.FragmentDayDetailBinding
+import com.sector.scheduleapp.fragments.detail.adapters.DayDetailAdapter
 import com.sector.scheduleapp.objects.Day
 import kotlin.collections.ArrayList
 

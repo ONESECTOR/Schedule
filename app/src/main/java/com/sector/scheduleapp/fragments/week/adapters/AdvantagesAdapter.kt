@@ -1,4 +1,4 @@
-package com.sector.scheduleapp.fragments.week
+package com.sector.scheduleapp.fragments.week.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

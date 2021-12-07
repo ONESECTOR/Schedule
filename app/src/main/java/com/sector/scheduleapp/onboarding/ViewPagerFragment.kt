@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.sector.scheduleapp.databinding.FragmentViewPagerBinding
+import com.sector.scheduleapp.onboarding.adapters.ViewPagerAdapter
 import com.sector.scheduleapp.onboarding.screens.FirstScreenFragment
 import com.sector.scheduleapp.onboarding.screens.SecondScreenFragment
 import com.sector.scheduleapp.onboarding.screens.ThirdScreenFragment

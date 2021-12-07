@@ -1,4 +1,4 @@
-package com.sector.scheduleapp.fragments.detail
+package com.sector.scheduleapp.fragments.detail.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

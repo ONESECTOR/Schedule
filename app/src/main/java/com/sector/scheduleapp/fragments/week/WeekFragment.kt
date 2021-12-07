@@ -10,9 +10,11 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.FragmentWeekBinding
+import com.sector.scheduleapp.fragments.week.adapters.AdvantagesAdapter
+import com.sector.scheduleapp.fragments.week.adapters.WeekAdapter
+import com.sector.scheduleapp.fragments.week.viewmodel.WeekViewModel
 import com.sector.scheduleapp.objects.Advantage
 import com.sector.scheduleapp.objects.Week
 import jp.wasabeef.recyclerview.animators.SlideInLeftAnimator
