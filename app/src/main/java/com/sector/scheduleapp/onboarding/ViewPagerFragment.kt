@@ -34,6 +34,7 @@ class ViewPagerFragment : Fragment() {
         )
 
         binding.viewPager.adapter = adapter
+        binding.viewPager.isUserInputEnabled = false
 
         return binding.root
     }

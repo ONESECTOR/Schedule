@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.viewpager2.widget.ViewPager2
 import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.FragmentSecondScreenBinding
@@ -16,6 +17,8 @@ class SecondScreenFragment : Fragment() {
     private val binding get() = _binding!!
 
     private var courseText: String? = null
+
+    private var itemClicked = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,13 +32,11 @@ class SecondScreenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
-
         setDefaultSettings()
 
         binding.apply {
             btnNext.setOnClickListener {
-                viewPager?.currentItem = 2
+                groupSelected(itemClicked)
             }
 
             spinnerCourse.setOnItemClickListener { parent, _, position, _ ->
@@ -46,9 +47,19 @@ class SecondScreenFragment : Fragment() {
 
             spinnerGroups.setOnItemClickListener { parent, _, position, _ ->
                 val selected = parent.getItemAtPosition(position).toString()
+                itemClicked = true
 
                 saveSettings(selected)
             }
+        }
+    }
+
+    private fun groupSelected(selected: Boolean) {
+        if (selected) {
+            val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
+            viewPager?.currentItem = 2
+        } else {
+            Toast.makeText(requireContext(), "Вы не выбрали группу!", Toast.LENGTH_SHORT).show()
         }
     }
 

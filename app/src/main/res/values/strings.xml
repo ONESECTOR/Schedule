@@ -65,7 +65,7 @@
     <string name="home">Home</string>
     <string name="days_of_the_week">Days of the week</string>
     <string name="advantage_title">Your schedule</string>
-    <string name="advantage_description">Learn more about who We are\nand why we created this app</string>
+    <string name="advantage_description">Having difficulties with the application,\nor do you have ideas for further updates?\n\nContact me!</string>
     <string name="advantage_symbol_news">N</string>
     <string name="advantage_symbol_information">I</string>
     <string name="test_day_of_week">Monday</string>
@@ -82,8 +82,13 @@
     <string name="test_subject_classroom" translatable="false">4.29Г</string>
 
     <!-- Splash screen fragment -->
-    <string name="developer_text">\"VolSU Schedule\" by onesector</string>
+    <string name="copyright" translatable="false">Copyright @ 2021 | onesector</string>
 
     <!-- About app fragment -->
     <string name="about_app">About app</string>
+    <string name="nickname_caps" translatable="false">ONESECTOR</string>
+    <string name="my_skills" translatable="false">Android developer</string>
+    <string name="telegram_link" translatable="false">https://t.me/onesector</string>
+    <string name="email_link" translatable="false">onesector.dev@gmail.com</string>
+    <string name="vk_link" translatable="false">https://vk.com/onesector</string>
 </resources>

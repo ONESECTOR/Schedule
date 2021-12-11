@@ -20,8 +20,8 @@
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_back"
-            android:layout_width="26dp"
-            android:layout_height="26dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_alignParentStart="true"
             android:background="@drawable/ic_back"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -34,7 +34,7 @@
             android:fontFamily="@font/golos_semi_bold"
             android:text="@string/settings"
             android:textColor="@color/elegant_black"
-            android:textSize="21sp" />
+            android:textSize="16sp" />
 
     </RelativeLayout>
 
@@ -46,7 +46,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/common"
         android:textColor="@color/elegant_black"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rl_bar" />
 
@@ -72,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:dropDownHeight="wrap_content"
                 android:inputType="none"
+                android:textSize="12sp"
                 android:text="@string/course"
                 tools:ignore="LabelFor" />
 
@@ -90,6 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none"
+                android:textSize="12sp"
                 android:text="@string/group"
                 tools:ignore="LabelFor" />
 

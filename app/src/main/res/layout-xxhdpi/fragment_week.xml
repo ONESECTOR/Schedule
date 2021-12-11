@@ -27,7 +27,7 @@
             android:fontFamily="@font/golos_semi_bold"
             android:text="@string/home"
             android:textColor="@color/elegant_black"
-            android:textSize="21sp"
+            android:textSize="20sp"
             tools:ignore="RelativeOverlap" />
 
         <androidx.appcompat.widget.AppCompatImageButton
@@ -59,7 +59,7 @@
             android:fontFamily="@font/golos_semi_bold"
             android:text="@string/numerator"
             android:textColor="@color/elegant_black"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_current_date"
@@ -69,7 +69,7 @@
             android:fontFamily="@font/golos_regular"
             android:text="@string/test_date"
             android:textColor="@color/elegant_black"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -100,7 +100,7 @@
             android:fontFamily="@font/golos_regular"
             android:text="@string/days_of_the_week"
             android:textColor="@color/elegant_black"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

@@ -11,43 +11,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/pure_white"
-        android:padding="20dp">
+        android:padding="12dp">
 
         <RelativeLayout
             android:id="@+id/rl_placeholder"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@drawable/rounded_placeholder_black"
+            android:background="@color/gray"
             android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_number_of_subject"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/golos_medium"
-                android:text="@string/test_number"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
 
         </RelativeLayout>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_subject"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/golos_bold"
-            android:text="@string/test_subject_name"
-            android:textColor="@color/elegant_black"
+            android:background="@color/gray"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/rl_placeholder"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toEndOf="@+id/rl_placeholder"
-            app:layout_constraintTop_toTopOf="@+id/rl_placeholder"
-            app:layout_constraintVertical_bias="0.5" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_description"
@@ -63,10 +50,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/golos_regular"
-            android:text="@string/test_subject_info"
-            android:textColor="@color/elegant_black"
-            android:textSize="16sp"
+            android:background="@color/gray"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
@@ -84,13 +69,11 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_time"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/golos_regular"
-            android:text="@string/test_subject_time"
-            android:textColor="@color/elegant_black"
-            android:textSize="16sp"
+            android:background="@color/gray"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_time"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
@@ -108,13 +91,11 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_aud"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/golos_regular"
-            android:text="@string/test_subject_classroom"
-            android:textColor="@color/elegant_black"
-            android:textSize="16sp"
+            android:background="@color/gray"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_aud"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"

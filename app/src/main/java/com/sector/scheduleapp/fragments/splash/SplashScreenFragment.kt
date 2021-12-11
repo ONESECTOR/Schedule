@@ -1,5 +1,6 @@
 package com.sector.scheduleapp.fragments.splash
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.os.Handler
@@ -12,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.FragmentSplashScreenBinding
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreenFragment : Fragment() {
     private var _binding: FragmentSplashScreenBinding? = null
     private val binding get() = _binding!!

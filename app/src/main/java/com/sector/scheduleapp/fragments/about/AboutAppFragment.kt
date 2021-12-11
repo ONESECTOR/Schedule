@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.sector.scheduleapp.R
 import com.sector.scheduleapp.databinding.FragmentAboutAppBinding
 
 class AboutAppFragment : Fragment() {
