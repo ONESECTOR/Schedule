@@ -32,7 +32,12 @@ class WeekAdapter(var daysOfWeek: List<Week>): RecyclerView.Adapter<WeekAdapter.
 
             binding.btnMore.setOnClickListener {
                 val action = WeekFragmentDirections.actionWeekFragmentToDayDetailFragment(daysOfWeek[position])
-                holder.itemView.findNavController().navigate(action)
+                itemView.findNavController().navigate(action)
+            }
+
+            itemView.setOnClickListener {
+                val action = WeekFragmentDirections.actionWeekFragmentToDayDetailFragment(daysOfWeek[position])
+                itemView.findNavController().navigate(action)
             }
         }
     }
