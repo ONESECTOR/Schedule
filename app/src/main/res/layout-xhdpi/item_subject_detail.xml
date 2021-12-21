@@ -102,7 +102,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/ic_audience"
+            android:background="@drawable/ic_door"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_time" />
 
