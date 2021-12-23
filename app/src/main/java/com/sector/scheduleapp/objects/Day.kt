@@ -5,5 +5,6 @@ data class Day(
     val subject: String = "",
     val teacher: String = "",
     val time: String = "",
+    val group: String = "",
     val type: String = ""
 )
